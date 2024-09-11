@@ -29,10 +29,12 @@ namespace Semin3_Task4
         num /= 10; 
         index--;
       } 
+      Console.Write("[");
       foreach (int i in arr)
       {
         Console.Write($"{i} ");
       }
+      Console.Write("]");
     }
   }
 }
