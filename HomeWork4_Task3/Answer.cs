@@ -11,11 +11,11 @@ namespace HomeWork4_Task3
     {
       int[] numbers = { 1, 3, 4, 6, 7, 8 };
       int temp;
-        Array.Reverse(numbers);
-        for (int i = 0; i < numbers.Length; i++)
-        {
-          Console.Write($"{numbers[i]} ");
-        }
+      Array.Reverse(numbers);
+      for (int i = 0; i < numbers.Length; i++)
+      {
+        Console.Write($"{numbers[i]} ");
+      }
 
       Console.Write("Original array: ");
       foreach (int number in numbers)
@@ -29,7 +29,7 @@ namespace HomeWork4_Task3
         numbers[i] = numbers[numbers.Length - 1 - i];
         numbers[numbers.Length - 1 - i] = temp;
       }
-      
+
       Console.Write("\nReverse array: ");
       foreach (int number in numbers)
       {
